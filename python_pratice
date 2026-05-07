@@ -1,0 +1,20 @@
+# Day 3 Python: While Loop + List
+n = int(input("Kitne subjects: "))
+marks = []
+i = 0
+
+while i < n:
+    m = int(input("marks daal: "))
+    marks.append(m)
+    i = i + 1
+
+total = 0
+j = 0
+while j < len(marks):
+    total = total + marks[j]
+    j = j + 1
+
+avg = total / n
+print("List:", marks)
+print("Total:", total)
+print("Average:", avg)
